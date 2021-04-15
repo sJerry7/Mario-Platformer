@@ -42,11 +42,11 @@ let platforms;
 let ground;
 let rays;
 let lives = 3;
-let bg_music = new Audio('./Assets/Audio/music.mp3');
-let bomb_sound = new Audio('./Assets/Audio/bomb.wav');
-let fruit_sound = new Audio('./Assets/Audio/fruit.wav');
-let clear_music = new Audio('./Assets/Audio/stage_clear.wav');
-let over_music = new Audio('./Assets/Audio/game_over.wav');
+let bg_music = new Audio('/music.mp3');
+let bomb_sound = new Audio('/bomb.wav');
+let fruit_sound = new Audio('/fruit.wav');
+let clear_music = new Audio('/stage_clear.wav');
+let over_music = new Audio('/game_over.wav');
 
 // Functions to play music
 function playMusic(music){
@@ -76,12 +76,12 @@ let player_config = {
 
 function preload ()
 {
-    this.load.image('sky', 'Assets/background.png');
-    this.load.image('ground', 'Assets/topground.png');
-    this.load.image('apple', 'Assets/apple.png');
-    this.load.image('bomb', 'Assets/bomb.png');
-    this.load.spritesheet('dude', 'Assets/dude.png', { frameWidth: 32, frameHeight: 48 });
-    this.load.image("ray","Assets/ray.png");
+    this.load.image('sky', '/background.png');
+    this.load.image('ground', '/topground.png');
+    this.load.image('apple', '/apple.png');
+    this.load.image('bomb', '/bomb.png');
+    this.load.spritesheet('dude', '/dude.png', { frameWidth: 32, frameHeight: 48 });
+    this.load.image("ray","/ray.png");
 }
 
 
